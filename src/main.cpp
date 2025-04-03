@@ -14,7 +14,7 @@ int main (void){
   
   while(1){
 
-    PORTD = a^(a>>1);  
+    PORTD = a^(a>>b);  // formaula para transformar binario a gray
     _delay_ms(2000);    
     a+=0x01;       
 
